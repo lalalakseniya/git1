@@ -1,25 +1,24 @@
 public class zadanie4 {
-    public static void main(String [] args){
-        int A=12;
-        int B=31;
-        int C= 55;
-        int D=100;
-        if(A % 2==0){
-            System.out.println("True");
-        }
-        else System.out.println("False");
-        if (B % 2==0){
-            System.out.println("True");
-        }
-        else System.out.println("False");
-        if (C % 2==0){
-            System.out.println("True");
-        }
-        else System.out.println("False");
-        if (D % 2==0){
-            System.out.println("True");
-        }
-        else System.out.println("False");
 
+    static boolean press(int ABCD[]) {
+        int c = 0;
+        for (int i = 0; i < 4; i++) {
+            if (ABCD[i] % 2 == 0 && ABCD[i] != 0)
+                c++;
+        }
+        if (c >= 2) {
+            return true;
+        } else return false;
+    }
+
+    public static void main(String[] args) {
+        int ABCD[] = new int[4];
+        for (int i = 0; i < 4; i++) {
+            ABCD[0] = 12;
+            ABCD[0] = 31;
+            ABCD[0] = 55;
+            ABCD[0] = 100;
+
+        }
     }
 }
